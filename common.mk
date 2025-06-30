@@ -171,6 +171,12 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 
+# Preopt SystemUI.
+PRODUCT_DEXPREOPT_SPEED_APPS += SystemUIGoogle  # For internal
+PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI  # For AOSP
+PRODUCT_DEXPREOPT_SPEED_APPS += Settings
+PRODUCT_DEXPREOPT_SPEED_APPS += Launcher3QuickStep
+
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
