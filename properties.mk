@@ -197,7 +197,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=0 \
-    ro.config.avoid_gfx_accel=true
+    ro.config.avoid_gfx_accel=true \
+    ro.launcher.blur.appLaunch=0
 
 # HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -276,7 +277,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.vendor.qti.sys.fw.bg_apps_limit=60
+    ro.vendor.qti.sys.fw.bg_apps_limit=30
 
 # Qualcomm System Daemon
 PRODUCT_PROPERTY_OVERRIDES += \
